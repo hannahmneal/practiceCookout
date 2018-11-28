@@ -36,6 +36,15 @@ function grill (currentObject) {
     cookedFood.push(currentObject); // Put the cooked food into the appropriate array
 };
 
+for (let i=0; i < uncookedFood.length; i+= 1) {
+	currentObject = uncookedFood[i];
+	grill(currentObject);
+}
+
+console.log(cookedFood);
+
+
+
 //      GOAL:
 // Iterate over the array of uncookedFood and invoke the function for each item so that the
 // cookedFood array contains all of the items after they are cooked.
